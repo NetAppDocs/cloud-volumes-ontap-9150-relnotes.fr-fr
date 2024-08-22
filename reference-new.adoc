@@ -1,0 +1,89 @@
+---
+sidebar: sidebar 
+permalink: reference-new.html 
+keywords: 'what"s new, new, features, release notes, enhancements' 
+summary: Cloud Volumes ONTAP 9.15.0 inclut une nouvelle amélioration. 
+---
+= Nouveautés d'Cloud Volumes ONTAP 9.15.0
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Volumes ONTAP 9.15.0 comprend de nouvelles améliorations.
+
+D'autres fonctionnalités et améliorations sont également introduites dans les dernières versions de BlueXP. Voir https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["Notes de mise à jour BlueXP"^] pour plus de détails.
+
+
+
+== 9.15.0 P2 (8 août 2024)
+
+Le correctif 9.15.0 P2 est désormais disponible pour Cloud Volumes ONTAP pour tous les fournisseurs cloud. BlueXP vous invitera à mettre à niveau vos systèmes existants vers cette version de correctif.
+
+https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.15.0P2["Afficher la liste des bogues corrigés dans le correctif P2"^] (Identifiant du site du support NetApp requis).
+
+
+
+== 9.15.0 P1 (10 juin 2024)
+
+Cloud Volumes ONTAP 9.15.0 P1 est désormais disponible dans AWS, Azure et Google Cloud. La version P1 est disponible pour le déploiement et la mise à niveau.
+
+Cette version comprend une nouvelle fonction et une amélioration.
+
+
+
+=== Vérification d'images dans Azure
+
+Des fonctionnalités de sécurité améliorées sont désormais disponibles pour vérifier les signatures des fichiers image Cloud Volumes ONTAP exportés via Azure.
+
+Pour plus d'informations, voir link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-azure-image-verification.html["En savoir plus sur Azure image Verification"^].
+
+
+
+=== Les blobs de page Azure ne sont plus pris en charge pour les nouveaux déploiements de paires haute disponibilité
+
+À partir de Cloud Volumes ONTAP 9.15.0 P1, les blobs de pages Azure ne sont plus pris en charge pour les nouveaux déploiements de paires haute disponibilité. Si vous utilisez actuellement des objets blobs de page Azure dans des déploiements de paires haute disponibilité existants, vous pouvez migrer vers des types d'instances de machine virtuelle plus récents dans les machines virtuelles Edsv4-series et les machines virtuelles Edsv5-series.
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["En savoir plus sur les configurations prises en charge dans Azure"^].
+
+
+
+== Notes de mise à niveau
+
+Lisez ces notes pour en savoir plus sur la mise à niveau vers cette version.
+
+
+
+=== Comment mettre à niveau
+
+Les mises à niveau de Cloud Volumes ONTAP doivent être effectuées depuis BlueXP. Vous ne devez pas mettre à niveau Cloud Volumes ONTAP à l'aide de System Manager ou de l'interface de ligne de commandes. Cela peut affecter la stabilité du système.
+
+link:http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html["Découvrez comment effectuer la mise à niveau lorsque BlueXP vous avertit"^].
+
+
+
+=== Chemin de mise à niveau pris en charge
+
+Vous pouvez effectuer une mise à niveau vers Cloud Volumes ONTAP 9.15.0 à partir de la version 9.14.1. BlueXP vous invitera à mettre à niveau les systèmes Cloud Volumes ONTAP éligibles vers cette version.
+
+
+
+=== Ou non
+
+* La mise à niveau d'un système à un nœud unique permet de mettre le système hors ligne pendant 25 minutes au cours desquelles les E/S sont interrompues.
+* La mise à niveau d'une paire haute disponibilité s'effectue sans interruption et les E/S sont continues. Au cours de ce processus de mise à niveau sans interruption, chaque nœud est mis à niveau en tandem afin de continuer à traiter les E/S aux clients.
+
+
+
+
+=== les instances c4, m4 et r4 ne sont plus prises en charge
+
+Dans AWS, les types d'instances EC2 c4, m4 et r4 ne sont plus pris en charge par Cloud Volumes ONTAP. Si un système existant s'exécute sur un type d'instance c4, m4 ou r4, vous devez passer à un type d'instance dans la famille d'instances c5, m5 ou r5. Vous ne pouvez pas mettre à niveau vers cette version tant que vous n'avez pas modifié le type d'instance.
+
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-change-ec2-instance.html["Découvrez comment modifier le type d'instance EC2 pour Cloud Volumes ONTAP"^].
+
+Reportez-vous link:https://mysupport.netapp.com/info/communications/ECMLP2880231.html["Support NetApp"^]à pour en savoir plus sur la fin de disponibilité et la prise en charge de ces types d'instances.
