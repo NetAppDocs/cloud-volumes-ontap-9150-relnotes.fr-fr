@@ -737,7 +737,6 @@
   <block id="1222cf807490df82fd7e0146eb6798c1" category="paragraph">Lorsque la fenêtre de maintenance est annoncée, le nœud partenaire du nœud ciblé effectue un basculement. Une fois la maintenance terminée, un rétablissement est lancé. Après le retour, la paire HA est censée revenir à un état sain. Le cas échéant, contactez le support NetApp pour obtenir de l'aide. Notez que les événements de maintenance sont ciblés sur l'une des machines virtuelles d'une paire haute disponibilité à la fois, et en général, les deux nœuds sont ciblés dans un délai relativement court.</block>
   <block id="1355c3042f61af06b4a61506de6e8ad1" category="paragraph">Les clients CIFS/SMB qui utilisent des partages CIFS disponibles en continu sur Cloud Volumes ONTAP subissent une perte de session lorsqu'un basculement a lieu. Lorsque l'agrégat utilisé par la session est renvoyé au nœud de rattachement de l'agrégat. Il s'agit d'une limitation imposée par le protocole CIFS/SMB lui-même. Les clients peuvent utiliser des produits tiers pour éviter tout problème de basculement ou de rétablissement. Pour obtenir de l'aide, contactez le support NetApp.</block>
   <block id="8e47e9575e2300fd877f61160058d7c0" category="sidebar">Ces notes de version décrivent les nouvelles fonctionnalités, les limites et les problèmes connus de Cloud Volumes ONTAP 9.15.0.</block>
-  <block id="3aecd779578c661d895e83c1e9e7274c" category="sidebar">Notes de mise à jour de Cloud Volumes ONTAP 9.15.0</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">Commencez</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">Quoi de neuf</block>
   <block id="8efc36afc2e7202a9c9bda00b8e8a75d" category="sidebar">Présentation des licences</block>
@@ -751,7 +750,6 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">Communauté NetApp</block>
   <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">Blog BlueXP</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Webinaires sur le cloud</block>
-  <block id="da38098873cb3db962a9491ab33ff93d" category="sidebar">Accueil des notes de mise à jour</block>
   <block id="4847e034bb0a55fcbc8a3380d6a3ab80" category="sidebar">AWS</block>
   <block id="3a580f142203677f1f0bc30898f63f53" category="sidebar">Azure</block>
   <block id="482723983a4f2af954e36ff41e567451" category="sidebar">Limites connues</block>
@@ -760,4 +758,7 @@
   <block id="1fff298355326f8c77bd77059a41c1a2" category="sidebar">Restrictions dans Azure</block>
   <block id="9a3a0c4b2afbb088e029484d4b34ba8b" category="sidebar">Restrictions dans Google Cloud</block>
   <block id="c3320c3457dfdfbada4a611a68854ea6" category="cell">Non pris en charge</block>
+  <block id="c3647f40e3574e0e6f49e20c19135bfa" category="section-title">Limites de l'utilisation des extensions de machines virtuelles Azure</block>
+  <block id="9d167ed7d52d81da8d83590ec3b5a4af" category="paragraph">Dans un déploiement, Cloud Volumes ONTAP ne prend pas en charge les extensions de machines virtuelles et les applications de machines virtuelles Azure. L'utilisation d'Cloud Volumes ONTAP dans Azure avec des extensions de machine virtuelle entraîne des retards dans les opérations, et NetApp recommande de les éviter.</block>
+  <block id="30f90a351fdc853ffe232763d3200b8b" category="sidebar">Notes de version de Cloud Volumes ONTAP 9.15.0</block>
 </blocks>
