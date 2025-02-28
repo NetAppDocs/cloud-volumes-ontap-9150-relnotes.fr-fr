@@ -210,4 +210,4 @@ La vitesse d'écriture élevée n'est pas prise en charge avec ces types d'insta
 
 == Régions prises en charge
 
-Pour la prise en charge des régions AWS, voir https://cloud.netapp.com/cloud-volumes-global-regions["Régions Cloud volumes Global"^].
+Pour la prise en charge des régions AWS, voir https://bluexp.netapp.com/cloud-volumes-global-regions["Régions Cloud volumes Global"^].
