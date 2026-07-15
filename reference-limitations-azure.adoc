@@ -18,12 +18,14 @@ Les limitations connues suivantes sont spécifiques à Cloud Volumes ONTAP dans 
 
 
 
+[[limitations-with-using-azure-vm-extensions]]
 == Limites de l'utilisation des extensions de machines virtuelles Azure
 
 Dans un déploiement, Cloud Volumes ONTAP ne prend pas en charge les extensions de machines virtuelles et les applications de machines virtuelles Azure. L'utilisation d'Cloud Volumes ONTAP dans Azure avec des extensions de machine virtuelle entraîne des retards dans les opérations, et NetApp recommande de les éviter.
 
 
 
+[[flash-cache-limitations]]
 == Limites de Flash cache
 
 Cloud Volumes ONTAP utilise le stockage NVMe local dans certains types de machines virtuelles, comme _Flash cache_. Notez cette limitation :
@@ -33,6 +35,7 @@ Cloud Volumes ONTAP utilise le stockage NVMe local dans certains types de machin
 
 
 
+[[ha-limitations]]
 == Limitations de LA HAUTE DISPONIBILITÉ
 
 Les paires HAUTE DISPONIBILITÉ ne sont pas prises en charge dans certaines régions.
